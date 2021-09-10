@@ -11,7 +11,9 @@
         <item name="colorOnSecondary">@color/white</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+        <!-- Remove default app bar. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
     <style name="Theme.HealthAssistant.SplashTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
@@ -19,5 +21,9 @@
         <item name="windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+    <style name="Theme.HealthAssistant.RoundedCornerImage" parent="">
+        <item name="cornerSize">20%</item>
     </style>
 </resources>

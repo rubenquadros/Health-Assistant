@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/home_animation_view"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_200"
+        android:background="@color/red_a700"
+        android:elevation="@dimen/dp_10"
+        app:shapeAppearanceOverlay="@style/Theme.HealthAssistant.RoundedCornerImage"
+        app:srcCompat="@drawable/app_icon"
+        android:layout_marginTop="@dimen/dp_16"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_home_description_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lora_regular"
+        android:text="@string/home_description_title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_16"
+        android:gravity="center"
+        android:layout_margin="@dimen/dp_16"
+        app:layout_constraintTop_toBottomOf="@+id/home_animation_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_home_description_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lora_regular"
+        android:gravity="center"
+        android:text="@string/home_description_subtitle"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_15"
+        android:layout_margin="@dimen/dp_16"
+        app:layout_constraintTop_toBottomOf="@+id/tv_home_description_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_heart_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button_primary"
+        android:fontFamily="@font/lora_bold"
+        android:text="@string/home_check_heart_rate"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="@dimen/sp_16"
+        android:layout_marginVertical="@dimen/dp_24"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        app:layout_constraintTop_toBottomOf="@+id/tv_home_description_subtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
