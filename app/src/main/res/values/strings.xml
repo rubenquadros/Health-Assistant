@@ -1,6 +1,16 @@
 <resources>
     <string name="app_name">HealthAssistant</string>
+    <string name="all_ok">OK</string>
     <string name="home_description_title">Keeping your body always in good health not an easy task. <font color="#FFF44336"><b>HealthAssistant</b></font> helps you with monitoring and makes it easy for you to keep track of your health!</string>
     <string name="home_description_subtitle">Welcome to your virtual health checkup!</string>
     <string name="home_check_heart_rate">Check your heart rate</string>
+    <string name="home_back_pressed">Press back again to leave</string>
+    <string name="heart_monitor_title">Heart Rate Monitor</string>
+    <string name="heart_monitor_instruction">Please keep the tip of you index finger on top of your camera lens which is at he back of your phone.\nPlease do not press too hard you will cut off circulation which will result in an inaccurate reading.\nIt will take a few seconds to compute your initial heart rate. It can take between 10 and 30 seconds to get an accurate reading.</string>
+    <string name="heart_monitor_initializing">Reading your heart rate… \nPlease do not remove your finger</string>
+    <string name="heart_monitor_reading">Your heart rate is: %d bmp</string>
+    <string name="heart_monitor_camera_permission">Please grant camera permission to proceed from settings to proceed</string>
+    <string name="permission_camera">You previously chose not to use camera with the app. Without this we will not be able to monitor your heart rate. \nPlease grant camera permission from settings.</string>
+    <string name="permission_app_settings">App Settings</string>
+    <string name="permission_not_now">Not Now</string>
 </resources>

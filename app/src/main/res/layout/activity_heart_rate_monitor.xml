@@ -2,8 +2,55 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/heart_monitor_parent"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HeartRateMonitorActivity">
+    tools:context=".presentation.HeartRateMonitorActivity">
+
+    <include
+        android:id="@+id/heart_monitor_app_bar"
+        layout="@layout/layout_appbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/heart_monitor_instruction_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_16"
+        android:text="@string/heart_monitor_instruction"
+        android:fontFamily="@font/lora_regular"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/heart_monitor_app_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/heart_monitor_lottie"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_200"
+        app:lottie_rawRes="@raw/heart_rate_monitor"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_margin="@dimen/dp_16"
+        app:layout_constraintTop_toBottomOf="@+id/heart_monitor_instruction_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/heart_monitor_value_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_16"
+        android:fontFamily="@font/lora_bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_18"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/heart_monitor_lottie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="@string/heart_monitor_initializing"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
