@@ -5,7 +5,7 @@
     android:id="@+id/heart_monitor_parent"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.HeartRateMonitorActivity">
+    tools:context=".presentation.heartrate.HeartRateMonitorActivity">
 
     <include
         android:id="@+id/heart_monitor_app_bar"

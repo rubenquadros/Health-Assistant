@@ -1,4 +1,4 @@
-package com.ruben.healthassistant.presentation.base
+package com.ruben.healthassistant.core
 
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.DefaultLifecycleObserver

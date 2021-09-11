@@ -1,4 +1,4 @@
-package com.ruben.healthassistant.presentation
+package com.ruben.healthassistant.presentation.home
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,7 +6,8 @@ import android.os.Handler
 import android.os.Looper
 import com.ruben.healthassistant.R
 import com.ruben.healthassistant.databinding.ActivityHomeBinding
-import com.ruben.healthassistant.presentation.base.BaseActivity
+import com.ruben.healthassistant.presentation.heartrate.HeartRateMonitorActivity
+import com.ruben.healthassistant.core.BaseActivity
 import com.ruben.healthassistant.utility.showToast
 
 class HomeActivity : BaseActivity() {

@@ -12,7 +12,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.ruben.healthassistant.R
 import com.ruben.healthassistant.databinding.FragmentPermissionDialogBinding
-import com.ruben.healthassistant.presentation.base.viewLifecycle
+import com.ruben.healthassistant.core.viewLifecycle
 
 class PermissionDialogFragment : BottomSheetDialogFragment() {
 

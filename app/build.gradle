@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
 }
 
 apply from: 'dependencies.gradle'
@@ -35,6 +37,14 @@ android {
     buildFeatures {
         viewBinding true
     }
+
+    kapt {
+        javacOptions {
+            option("-Adagger.fastInit=ENABLED")
+            option("-Adagger.hilt.android.internal.disableAndroidSuperclassValidation=true")
+        }
+    }
+
     testOptions {
         unitTests {
             returnDefaultValues = true

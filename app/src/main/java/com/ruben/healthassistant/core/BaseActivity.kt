@@ -1,4 +1,4 @@
-package com.ruben.healthassistant.presentation.base
+package com.ruben.healthassistant.core
 
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -12,7 +12,7 @@ abstract class BaseActivity: AppCompatActivity() {
 
     fun setupAppbar(toolbar: Toolbar, shouldShowBack: Boolean, toolbarTitleTv: TextView, title: String) {
         toolbarTitleTv.text = title
-        setupToolbar(toolbar, true)
+        setupToolbar(toolbar, shouldShowBack)
     }
 
     override fun onSupportNavigateUp(): Boolean {
